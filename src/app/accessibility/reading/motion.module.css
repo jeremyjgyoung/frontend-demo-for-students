@@ -1,0 +1,15 @@
+.dot {
+  transition: transform 600ms ease;
+}
+.moved {
+  transform: translateX(6rem);
+}
+.still {
+  transition: none;
+}
+/* Respect a device preference even when the preview checkbox is off. */
+@media (prefers-reduced-motion: reduce) {
+  .dot {
+    transition: none;
+  }
+}
